@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sway Games - Free Pro Access Codes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .app-link {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .app-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .stats {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .stats h2 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            color: #ffd700;
+        }
+        
+        .stats p {
+            opacity: 0.8;
+        }
+        
+        .codes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .code-card {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .code-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-color: #ffd700;
+        }
+        
+        .code-card.redeemed {
+            background: rgba(255, 0, 0, 0.1);
+            border-color: rgba(255, 0, 0, 0.3);
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .code-card.redeemed::before {
+            content: "REDEEMED";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .code-text {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .copy-btn {
+            background: #ffd700;
+            color: #333;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #ffed4e;
+            transform: scale(1.05);
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        .copied-toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transform: translateX(300px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .copied-toast.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 FREE PRO ACCESS CODES</h1>
+            <p>Get your free annual Pro access for Sway Games Qwizy!</p>
+            <a href="https://apps.apple.com/us/app/sway-games-qwizy/id6741773936?l=en-EN" class="app-link" target="_blank">
+                📱 Download App First
+            </a>
+        </div>
+        
+        <div class="stats">
+            <h2 id="available-count">72</h2>
+            <p>codes still available</p>
+        </div>
+        
+        <div class="codes-grid" id="codes-grid">
+            <!-- Codes will be populated here -->
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 How to Redeem:</h3>
+            <ol>
+                <li>First, download the Sway Games Qwizy app from the App Store</li>
+                <li>Click any available code above to copy it</li>
+                <li>Open the App Store on your device</li>
+                <li>Tap your profile picture (top right)</li>
+                <li>Tap "Redeem Gift Card or Code"</li>
+                <li>Paste the code and tap "Redeem"</li>
+                <li>Enjoy your free Pro access! 🎉</li>
+            </ol>
+        </div>
+        
+        <div class="footer">
+            <p>⚡ Codes are removed automatically when redeemed by someone</p>
+            <p>🕒 Offer expires next Saturday night</p>
+        </div>
+    </div>
+    
+    <div class="copied-toast" id="copied-toast">
+        Code copied to clipboard! 📋
+    </div>
+
+    <script>
+        const promoCodes = [
+            "XF7RMX7HK4YY", "67HKE76YFANP", "4EK4PR3666YJ", "FJ4PXHAXYALX",
+            "3AE7YMKH33AM", "6K6HTERFTXHR", "EN4LYYPPWW6F", "33XA6YNKNE3F",
+            "AWTJAMY3H4XL", "JHFKLKNLYA7R", "LXM63J9JMWXE", "X436AMPE49AL",
+            "MWX4XXKNK3MP", "YMXYFWKP7T93", "KAJEPMFHAHPJ", "HFP3WXRWXEM7",
+            "FWFLPPRH6WL9", "JX3JYKN7T7TM", "NFF4RHHNFR9F", "9HM4K6X3JXE7",
+            "NX7HW43JNTKE", "4NEKY3E9XYK9", "4P34E7XJNRNH", "TNYR3X3XMMF4",
+            "T3A7HWYPH7NW", "YFA7KELN46RR", "NTL93L4A6FL3", "3JP6L3E6LNWR",
+            "PHYHMN7EPRXP", "PAYJJW76EMET", "3APA3YF6H6P6", "KM9T9ETXE7K6",
+            "YYEKWNE34MR7", "TWT3MWPKFMHH", "EJY3HWJ3KLJ7", "66T3JMRHTKMF",
+            "JYYR9WJE37LE", "LXJKHRLAHKNA", "PW6AETFM93L4", "L93PJ7NKK6NE",
+            "KA7P6NRK4HR7", "W9THN7K3LTXR", "9RLF9YWP93PY", "AWFYWWKMWW4M",
+            "HT3ERNNHYW93", "LXW4JY3N3MPX", "NFEK7J7T6JAL", "FWTHTFAYK4JM",
+            "H9R9HH77KTMW", "TKHTPYNENXH9", "696AWJ4NFLH3", "MJF7K9TPAP74",
+            "PY49X9RRYFX9", "HYNXYYHERJNF", "NEENTWXMRAJY", "43R4NX3T9WMX",
+            "3KAF9MATPRYF", "W6TTEH6XWH9N", "RA63HXP3MEPE", "W677AY4MFX9Y",
+            "JF3K79X4E7R9", "FKTTPW4XHMJH", "E4FATPFXNFH4", "6M7T66MKAFY7",
+            "KNH6KHAAAP94", "T3774YM6AW4N", "FRMEF6X9M3RW", "H6WYMAKYN4FM",
+            "YRR7NHW9LATH", "ATAJK3EFML3P", "W4FFN77HXHM9", "MJ3P4HEJFE34"
+        ];
+
+        let availableCodes = [...promoCodes];
+        let redeemedCodes = [];
+
+        function renderCodes() {
+            const grid = document.getElementById('codes-grid');
+            const availableCount = document.getElementById('available-count');
+            
+            grid.innerHTML = '';
+            
+            // Show available codes first
+            availableCodes.forEach(code => {
+                const codeCard = createCodeCard(code, false);
+                grid.appendChild(codeCard);
+            });
+            
+            // Show redeemed codes
+            redeemedCodes.forEach(code => {
+                const codeCard = createCodeCard(code, true);
+                grid.appendChild(codeCard);
+            });
+            
+            availableCount.textContent = availableCodes.length;
+        }
+
+        function createCodeCard(code, isRedeemed) {
+            const card = document.createElement('div');
+            card.className = `code-card ${isRedeemed ? 'redeemed' : ''}`;
+            
+            card.innerHTML = `
+                <div class="code-text">${code}</div>
+                ${!isRedeemed ? '<button class="copy-btn">Copy Code</button>' : ''}
+            `;
+            
+            if (!isRedeemed) {
+                card.addEventListener('click', () => copyCode(code));
+            }
+            
+            return card;
+        }
+
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                showCopiedToast();
+                markAsRedeemed(code);
+            });
+        }
+
+        function markAsRedeemed(code) {
+            // Simulate a delay as if checking with server
+            setTimeout(() => {
+                const index = availableCodes.indexOf(code);
+                if (index > -1) {
+                    availableCodes.splice(index, 1);
+                    redeemedCodes.push(code);
+                    renderCodes();
+                }
+            }, Math.random() * 3000 + 1000); // Random delay 1-4 seconds
+        }
+
+        function showCopiedToast() {
+            const toast = document.getElementById('copied-toast');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Initialize the page
+        renderCodes();
+
+        // Simulate other people using codes (for demo purposes)
+        setInterval(() => {
+            if (availableCodes.length > 0 && Math.random() < 0.1) { // 10% chance every 5 seconds
+                const randomIndex = Math.floor(Math.random() * availableCodes.length);
+                const randomCode = availableCodes[randomIndex];
+                availableCodes.splice(randomIndex, 1);
+                redeemedCodes.push(randomCode);
+                renderCodes();
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
