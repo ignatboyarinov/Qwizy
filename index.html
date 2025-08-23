@@ -17,7 +17,52 @@
   <!-- Original trials -->
   
 
-
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Wait a bit for Wix to load
+        setTimeout(function() {
+            console.log('🚀 Removing Wix banner...');
+            
+            // Create and inject CSS
+            const style = document.createElement('style');
+            style.id = 'wix-banner-killer';
+            style.innerHTML = `
+                .ytGGBw, .MyEGHM, .o9Ik1k, 
+                [class*="freemium"], [class*="FreemiumBanner"],
+                #WIX_ADS, [id*="WIX_ADS"] {
+                    display: none !important;
+                    visibility: hidden !important;
+                    height: 0 !important;
+                    opacity: 0 !important;
+                }
+                :root, :host, .spxThemeOverride, .max-width-container {
+                    --wix-ads-height: 0px !important;
+                    --wix-ads-top-height: 0px !important;
+                    --sticky-offset: 0px !important;
+                }
+                #SITE_CONTAINER, #site-root, #masterPage, #PAGES_CONTAINER {
+                    top: 0 !important;
+                    margin-top: 0 !important;
+                    --top-offset: 0px !important;
+                }
+                body { margin-top: 0 !important; padding-top: 0 !important; }
+                .czJOIz, .WXq0H5 { top: 0 !important; }
+                .BmZ5pC { min-height: 100vh !important; top: 0 !important; }
+            `;
+            document.head.appendChild(style);
+            
+            // Remove banner elements directly
+            const banners = document.querySelectorAll('.ytGGBw, .MyEGHM, .o9Ik1k, [class*="freemium"], #WIX_ADS');
+            banners.forEach(el => el.remove());
+            
+            // Fix CSS variables
+            document.documentElement.style.setProperty('--wix-ads-height', '0px');
+            document.documentElement.style.setProperty('--wix-ads-top-height', '0px');
+            
+            console.log('✅ Wix banner removed!');
+        }, 1000); // Wait 1 second for Wix to load
+    });
+    </script>
   <!-- Segmenter Polyfill -->
   <script>
     if (!window.Intl || !window.Intl.Segmenter) {
